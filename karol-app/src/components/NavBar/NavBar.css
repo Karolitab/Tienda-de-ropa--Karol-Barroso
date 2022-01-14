@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Luxurious+Roman&display=swap');
+
+.Icon{
+    margin-right: 1100px;
+    font-size: 35px;
+    color: rgb(247, 247, 247);
+    font-family: 'Luxurious Roman', cursive;
+}
+a{
+    color: rgb(247, 247, 247);
+}
+ul {
+    list-style-type: none;
+    margin:0px;
+    font-size: 25px;
+    background-color: rgb(51, 50, 50);
+    padding: 20px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  li{
+    font-family: 'Inconsolata', monospace;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .CartIcon{
+  color: aliceblue;
+  }
+  
