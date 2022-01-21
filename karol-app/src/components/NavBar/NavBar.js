@@ -7,7 +7,7 @@ export default function NavBar(){
             <>
             <div className="navBar">
                 <ul>
-               <li className="Icon">YouManga</li> 
+               <li className="Icon">You</li> 
                <li><a href="Home">Home</a> </li>
                 <li><a href="products">Products</a> </li>
                 <li><a href="contact">Contact</a></li>

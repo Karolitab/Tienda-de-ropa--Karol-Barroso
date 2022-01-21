@@ -1,0 +1,26 @@
+[
+    {
+        "title" : "Far Cry",
+        "price" : "$20",
+        "description" : "",
+        "image" : "https://m.media-amazon.com/images/I/915kmHF1WaL._SL1500_.jpg"
+    },
+    {
+        "title" : "Minecraft Dungeons",
+        "price" : "30",
+        "description" : "",
+        "image" : "https://m.media-amazon.com/images/I/71hirwQpnkL._SL1346_.jpg"
+    },
+    {
+        "title" : "Assassin's Creed Valhalla",
+        "price" : "30",
+        "description" : "",
+        "image" : "https://m.media-amazon.com/images/I/81XDBmZCsdL._SL1500_.jpg"
+    },
+    {
+        "title" : "Back 4 Blood",
+        "price" : "40",
+        "description" : "",
+        "image" : "https://m.media-amazon.com/images/I/81SrHtD-NwL._SL1500_.jpg"
+    }
+]
