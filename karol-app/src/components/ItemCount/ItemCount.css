@@ -1,0 +1,34 @@
+.delineado{
+    border-radius: 5px;
+}
+
+.counter{
+    width: 100px; 
+}
+.ancho-counter{
+    margin:10px;
+    width: 180px;
+}
+
+.add-to-cart{
+    display : flex;
+    margin: 10px;
+    width: 180px;
+    background-color: #414040;
+    border-color: #414040;
+}
+.add-to-cart:hover{
+   background-color: #5a5a5a;
+   border-color: #414040;
+}
+
+.card{
+    width : 250px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    box-shadow: none !important;
+    border:none;
+}

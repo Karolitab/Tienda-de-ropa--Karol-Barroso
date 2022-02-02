@@ -1,0 +1,5 @@
+[
+    { "name" : "Juegos Xbox", "link" : "/juegosxbox"},
+    { "name" : "Juegos PlayStation5", "link" : "/juegosplay"},
+    { "name" : "Juegos NintendoSwitch", "link" : "/juegoswitch"}
+  ]

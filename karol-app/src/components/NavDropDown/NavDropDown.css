@@ -1,0 +1,7 @@
+.categoria{
+    color: rgb(0, 0, 0);
+}
+
+.categoria:hover{
+    color: rgb(171, 39, 189)
+}
