@@ -6,10 +6,12 @@ import './Item.css'
 
 export default function Item({ item }) {
 
-    const { id, title, price, description, image} = item
+    const { id, title, price, description, image, stock} = item
+    const link = (stock === 0) ? '/' : `/item/${id}`
 
     return (
-        <Card className='producto'>
+        <NavLink to={link} className='noDeco'> 
+            <Card className='producto'>
             <Card.Img variant="top" src={image || iconDefault}/>
             <Card.Body>
                 <Card.Title className='padding'>{title}</Card.Title>
@@ -26,7 +28,7 @@ export default function Item({ item }) {
                 </Button>
             </Card.Body>
         </Card>
-    
+        </NavLink>
     );
 };
 

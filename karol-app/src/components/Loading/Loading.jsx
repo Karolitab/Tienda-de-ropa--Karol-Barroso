@@ -6,7 +6,7 @@ export default function Loading(){
     return (
         <div className='divPadre'>
             <div className='divHijo'>
-                <Spinner className='spinner-grow' animation="border"  color-blue />
+                <Spinner className='spinner-grow' animation="border" color-blue />
             </div>
         </div>
     )

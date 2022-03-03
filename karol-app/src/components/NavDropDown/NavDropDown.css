@@ -1,7 +1,7 @@
 .categoria{
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
 .categoria:hover{
-    color: rgb(171, 39, 189)
+    color: red
 }

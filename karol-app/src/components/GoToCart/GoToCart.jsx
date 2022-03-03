@@ -2,7 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Button } from 'react-bootstrap'
 import './GoToCart.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons'
 export default function GoToCart ({cantidad}) {
   return (
         <div style={{display:'grid'}}>

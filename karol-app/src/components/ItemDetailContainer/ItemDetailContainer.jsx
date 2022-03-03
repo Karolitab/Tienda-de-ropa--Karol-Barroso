@@ -1,37 +1,25 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import { useParams } from 'react-router';
 import ItemDetail from '../ItemDetail/ItemDetail';
+import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import Loading from '../Loading/Loading';
-import data from './../../data/products.json'
+import useFirestoreItem from '../../hooks/useFirestoreItem';
 
 export default function ItemDetailContainer() {
 
     const {itemId} = useParams()
-
-    const traerProducto = async () =>{
-        
-        setTimeout(()=>{
-
-            const miProducto = data.find(item => item.id === itemId)
-            setProducto(miProducto)
-
-        } , 2000)
-    }
-
-    const [producto, setProducto] = useState([])
-
-    useEffect( ()=> {
-        traerProducto()
-    }, [itemId])
+    const {item, loading, error} = useFirestoreItem("items", itemId);
 
     return (
         <div>
             {
-                (producto.id) ?
-                
-                <ItemDetail item={producto}/>
+                (error) ?
+                <ErrorMessage error={error} />
                 :
-                <Loading />
+                (loading) ?
+                 <Loading />
+                :
+                <ItemDetail item={item}/>
             }
             
         </div>

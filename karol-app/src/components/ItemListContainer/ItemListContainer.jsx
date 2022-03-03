@@ -1,39 +1,27 @@
-import React, {useEffect, useState} from "react"
+import React from "react"
 import { useParams } from "react-router"
 import Loading from "../Loading/Loading"
 import ItemList from "../ItemList/ItemList"
-import data from './../../data/products.json'
-import "./ItemListContainer.css"
+import ErrorMessage from "../ErrorMessage/ErrorMessage"
+import useFirestoreCollection from "../../hooks/useFirestoreCollection"
+
 
 export default function ItemListContainer ({greeting}) {
 
     const {categoryName} = useParams()
-    const [productos, setProductos] = useState([])
-
-    useEffect( ()=> {
-        
-        const products = new Promise( resolve => {
-            setTimeout(() => resolve(data), 1000)
-        })
-        .then(res => {
-            const misProductos = (categoryName) ?  
-                res.filter(item => item.category === categoryName) : res
-            
-            setProductos(misProductos)         
-        })
-
-    }, [categoryName])
+    const {collection, error, loading} = useFirestoreCollection('items', categoryName)
 
     return(
         <div>
             {
-                (productos.length > 0) ? 
-                    <>
-                        <p className='greeting'>{greeting}</p>
-                        <ItemList products={productos} />
-                    </>
+                (error) ?
+                <ErrorMessage error={error}/>
                 :
-                    <Loading />
+                (loading) ? 
+                <Loading />
+                :
+                <ItemList greeting={greeting} products={collection} />
+                
             }
         </div>
     )

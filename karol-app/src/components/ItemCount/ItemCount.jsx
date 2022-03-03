@@ -11,7 +11,7 @@ const ItemCount = ({initial, stock, onAdd}) => {
         if(counter < stock){
             setCounter(counter + 1)
         } else if(counter === stock){
-            swall('Ups! Has alcanzado el límite de stock!')
+            swall('No tenemos tantos!')
         }
     }
 
