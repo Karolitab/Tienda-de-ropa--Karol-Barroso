@@ -1,6 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;1,300&display=swap');
 .navbar-custom {
-  background-color: rgb(160, 89, 201);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .logo{
   margin-top: 1.2%;
+}
+.navbar-custom{
+  padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-family: 'Chakra Petch', sans-serif;
+}
+header.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(7rem + 72px);
+  padding-bottom: 7rem;
+  background-image: url(https://wallpaperaccess.com/full/4910984.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+  font-family: 'Chakra Petch', sans-serif;
+  
+}
+.normalizeBlackLink {
+  color: rgba(234, 170, 253, 0.904); 
+  text-decoration: none;
+}
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+.btn-primary {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: #463a3a;
+}
+.btn-primary:hover{
+  background-color: rgba(95, 41, 83, 0.7);
+  border-color: #463a3a;
 }

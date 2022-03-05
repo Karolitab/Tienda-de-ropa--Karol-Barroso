@@ -13,10 +13,10 @@ export default function Cart() {
     <div className='containerCart'>
       {
         (cart.length === 0) ?
-          <div >
-            <h2>Tu carrito de compras esta vacio</h2>
+          <div class='dentro'>
+            <h2>Añade algo a tu carrito!</h2>
             <br/>
-            <NavLink to={'/'} style={{color:'black'}}>Regresa a comprar</NavLink>
+            <NavLink to={'/'} style={{color:'white'}}>Regresa a comprar</NavLink>
           </div>
           :
           <>

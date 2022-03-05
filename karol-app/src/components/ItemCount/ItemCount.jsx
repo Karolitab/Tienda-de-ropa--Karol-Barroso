@@ -22,7 +22,7 @@ const ItemCount = ({initial, stock, onAdd}) => {
     }
 
     return (
-        <div className='card'>
+        <div className='carde'>
                 <ButtonGroup className='delineado ancho-counter'>
                     <Button variant="light" onClick={restar}>-</Button>
                     <Button className='counter' variant="light">{counter}</Button>

@@ -10,9 +10,9 @@ export default function CartItem({product, quantity}) {
 
   return (
     <div className='item'>
-        <img src={product.image || iconDefault} alt="producto" width="30%" height="15%"/>
+        <img src={product.image || iconDefault} alt="producto" width="18%" height="10%"/>
 
-        <div style={{marginLeft:'40px'}}>
+        <div style={{marginLeft:'3px'}}>
           <h4>{product.title}</h4>
           <p>${product.price} - Cantidad: {quantity}</p>
           <div >
@@ -20,7 +20,7 @@ export default function CartItem({product, quantity}) {
               <Button type="button" class="btn" className="ordena" onClick={()=>oneItemLess(product.id)}> - </Button>
               <Button type="button" class="btn" className="ordena" onClick={()=>oneItemMore(product.id)}> + </Button>
             </ButtonGroup>
-            <Button type="button" class="btn" className="ordena" onClick={()=>deleteFromCart(product.id)} style={{marginTop:'15px', display:'block'}}>
+            <Button type="button" class="btn" className="ordena elimina" onClick={()=>deleteFromCart(product.id)} style={{marginTop:'15px',display:'block'}}>
               Eliminar
             </Button>
           </div>

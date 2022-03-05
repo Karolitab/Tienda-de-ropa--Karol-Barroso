@@ -3,7 +3,7 @@
 }
 
 .counter{
-    width: 100px; 
+    width: 10%; 
 }
 .ancho-counter{
     margin:16px;
@@ -22,9 +22,9 @@
    border-color: #414040;
 }
 
-.card{
-    width : 250px;
-    height: 150px;
+.carde{
+    width : 50%;
+    height: 20%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;

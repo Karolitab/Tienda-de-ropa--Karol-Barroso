@@ -9,6 +9,8 @@ import CartProvider from './context/CartProvider';
 import CheckOut from './components/CheckOut/CheckOut'
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
+import Header from './components/header/header';
+import Soporte from './components/Soporte/soporte';
 
 function App() {
   return (
@@ -18,7 +20,7 @@ function App() {
           <NavBar />
           <Switch>
             <Route exact path='/'>
-            
+            <Header />
               <ItemListContainer greeting="Todos tus juegos favoritos en una sola tienda!" />
               <Footer />
             </Route>
@@ -35,6 +37,9 @@ function App() {
             </Route>
             <Route exact path='/about'>
               <About />
+            </Route>
+            <Route exact path='/soporte'>
+              <Soporte />
             </Route>
           </Switch>
         </BrowserRouter>

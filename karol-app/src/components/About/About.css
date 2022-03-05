@@ -24,3 +24,17 @@
 .margin-horarios{
     margin: 40px 0px 30px 0px;
 }
+.row  {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+    background-color: rgb(243, 225, 240);
+}
+.containere{
+ padding-top: 8%;
+ padding-left: 18%;
+ display: flex;
+}

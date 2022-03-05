@@ -3,7 +3,12 @@
     border: 1px black solid;
 }
 
-.containerCart{
-    margin: 3%;
+
+.dentro{
     text-align: center;
+    padding-top: 15%;
+    z-index: 1;
+    color: rgb(235, 111, 240);
+    
+    font-family: 'Chakra Petch', sans-serif;
 }

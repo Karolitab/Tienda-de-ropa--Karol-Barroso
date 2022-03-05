@@ -50,7 +50,7 @@ export default function CheckOut() {
         return setState({
             orderId: null,
             error: null,
-            badInput: 'Debes completar todos los campos para continuar.'
+            badInput: 'Rellena los campos antes de continuar'
         })
 
         const emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
@@ -59,7 +59,7 @@ export default function CheckOut() {
         return setState({
             orderId: null,
             error: null,
-            badInput: 'El email ingresado no es válido.'
+            badInput: 'Email no valido'
         })
 
         sendOrder(order)
@@ -97,7 +97,7 @@ export default function CheckOut() {
         })  
         
         batch.commit()
-        .then(r => console.log(`Se ha actualizado el batch de productos!`))
+        .then(r => console.log(`Se han actualizado los productos!`))
         .catch( err => {
             setState({
                 orderId: null,
@@ -113,19 +113,20 @@ export default function CheckOut() {
             state.error ?
             <ErrorMessage error={state.error}/>
             :
-            <div className='containerCheckOut'>
-                <h3 className='margin'>Ingresá tus datos:</h3>
+            <div className='containerCheckOut'> 
+                
+                <h3 className='margin'>Tus Datos</h3>
 
-                <input type="text" name="name" ref={nameRef} placeholder="Nombre y Apelllido" />
+                <input type="text" name="name" ref={nameRef} placeholder="Fullname" />
                 <br />
 
-                <input type="text" name="phone" ref={mobileRef} placeholder="Nro de Celular" />
+                <input type="text" name="phone" ref={mobileRef} placeholder="Telefono" />
                 <br />
 
                 <input type="text" name="email" ref={emailRef} placeholder="Email" />
                 <br />
 
-                <input type="text" name="state" ref={stateRef} placeholder="Provincia" />
+                <input type="text" name="state" ref={stateRef} placeholder="Estado" />
                 <br />
 
                 <input type="text" name="city" ref={cityRef} placeholder="Ciudad" />
@@ -137,12 +138,12 @@ export default function CheckOut() {
                     {state.badInput && (<p>{state.badInput}</p>)}
                     {state.orderId ?
                         <> 
-                            <h3>Felicidades! Se ha creado correctamente tu orden: {state.orderId}</h3>
+                            <h3>Numero de orden {state.orderId}</h3>
                             <NavLink to={'/'} style={{color:'black'}}>Volver al inicio</NavLink>
                         </>
                         :
                         <Button variant='light' onClick={() => handleClick()} className='border'>
-                            Vamos!
+                            :)
                         </Button>
                     }
                 </div>

@@ -1,19 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
 .padding{
   margin: 12px;
+  text-align: center;
 }
 
 .boton{
   margin-left: 12px;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 .description{
   font-size: 16px;
   margin-bottom: 8px;
+  font-family: 'Chakra Petch', sans-serif;
+  text-align: center;
 }
 
 .producto{
   height: auto !important;
-  width: '18rem' !important;
   color : black;
   overflow: hidden;
   box-shadow: 0 2px 20px gray !important;
@@ -27,6 +32,7 @@
 .ordena{
   background-color: #414040;
   border-color: #414040;
+  margin-left: 30%;
 }
 .ordena:hover{
   background-color: #747474;
@@ -36,3 +42,8 @@
   color: black;
   text-decoration: none;
 }
+.card-body {
+  width: '18rem' !important;
+  background-color: rgb(221, 207, 230);
+  
+  }

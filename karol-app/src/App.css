@@ -1,9 +1,10 @@
 
 .App {
-  background-color: #eeeeee;
+  background-image:url('https://cdna.artstation.com/p/assets/images/images/026/861/202/large/valeriya-kim-moonlit-ruinsx4-1080.jpg?1589924707');
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   font-weight: 300;
+  font-family: var(--bs-body-font-family);
 }
 
 .normalizeBlackLink{

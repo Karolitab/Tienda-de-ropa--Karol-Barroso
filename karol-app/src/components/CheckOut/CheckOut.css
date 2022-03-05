@@ -1,5 +1,4 @@
 .containerCheckOut{
-    margin: 3%;
     text-align: center;
 }
 .containerCheckOut > input {
@@ -15,14 +14,22 @@ input{
     margin: 2%;
 }
 #sendOrder > p {
-    color:red;
+    color:rgb(231, 73, 34);
+    font-weight: bold;
 }
 .margin{
-    margin: 2%;
+   padding-top: 130px;
+    color: aliceblue;
+    border: black;
+    font-weight: bold;
+   text-align: center;
 }
 .border{
     border-radius: 5px;
     width: 100px;
     border: 1px black solid !important;
     margin-bottom: 3%;
+}
+.orden{
+    color: aliceblue;
 }
