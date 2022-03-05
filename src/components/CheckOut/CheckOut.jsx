@@ -1,4 +1,4 @@
-/**import React, {useRef, useState, useContext} from 'react';
+import React, {useRef, useState, useContext} from 'react';
 import firebase from "firebase";
 import { Button } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom';
@@ -155,4 +155,3 @@ export default function CheckOut() {
     );
 
 };
-**/
