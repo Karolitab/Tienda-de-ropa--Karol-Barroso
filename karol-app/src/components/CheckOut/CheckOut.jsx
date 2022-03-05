@@ -138,7 +138,7 @@ export default function CheckOut() {
                     {state.badInput && (<p>{state.badInput}</p>)}
                     {state.orderId ?
                         <> 
-                            <h3>Numero de orden {state.orderId}</h3>
+                            <h3 className="orden">Numero de orden {state.orderId}</h3>
                             <NavLink to={'/'} style={{color:'black'}}>Volver al inicio</NavLink>
                         </>
                         :
