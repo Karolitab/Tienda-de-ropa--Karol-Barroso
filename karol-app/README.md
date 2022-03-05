@@ -6,3 +6,4 @@ Disfruta de ofertas exclusivas, actualizaciones automáticas y otras grandes ven
 components, dom, hooks, rutas y navegacion,firebase, entre otras. Esta app cuenta con HTML, CSS, Javascript, y bootstrap.
 
 Gif de la pagina 
+<IMG SRC="https://media.giphy.com/media/pW8as9ZPlSAF8lYxmP/giphy.gif" ALT="commerce">
