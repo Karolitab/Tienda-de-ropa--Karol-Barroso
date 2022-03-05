@@ -10,7 +10,7 @@ export default function Item({ item }) {
     const link = (stock === 0) ? '/' : `/item/${id}`
 
     return (
-        <NavLink to={link} className='noDeco'> 
+        <NavLink to={link} id ="abajo"className='noDeco'> 
             <Card className='producto'>
             <Card.Img variant="top" src={image || iconDefault}/>
             <Card.Body>

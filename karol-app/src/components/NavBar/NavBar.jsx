@@ -45,12 +45,4 @@ export default function NavBar() {
     </div>
   );
 }
- /**
-  *  <li class="nav-item" role="presentation"><a class="nav-link" href="#"><img src={logo} alt="logo"  width="120px" height="65px" /></a></li>
-                <li class="nav-item" role="presentation" className="logo"> WolfGaming </li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="#"> <Nav.Link><NavLink to={'/'} className='normalizeBlackLink'>Home</NavLink></Nav.Link></a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="#"> <NavDropDown title='Productos' categories={collection} /></a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="#"> <Nav.Link><NavLink to={'/acerca'} className='normalizeBlackLink'>Acerca</NavLink></Nav.Link></a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="#"><Nav.Link><NavLink to={'/contact'} className='normalizeBlackLink'>Soporte</NavLink></Nav.Link></a></li>
-                <CartWidget />
-  */
+ 
