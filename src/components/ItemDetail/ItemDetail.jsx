@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Col, Row, Image, Container } from 'react-bootstrap';
+import { Image, Container } from 'react-bootstrap';
 import ItemCount from './../ItemCount/ItemCount'
 import GoToCart from '../GoToCart/GoToCart';
 import iconDefault from '../../assets/defaultIMG.png'

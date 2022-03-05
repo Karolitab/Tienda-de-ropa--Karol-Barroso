@@ -1,5 +1,5 @@
 import React from "react";
-import {Col, Row, Image, Container} from 'react-bootstrap'
+import {Container} from 'react-bootstrap'
 import './soporte.css'
 
 
